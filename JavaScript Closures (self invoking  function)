@@ -23,3 +23,24 @@ function myFunction(){
 
 </body>
 </html>
+
+// A closure is a function along with its lexical environment, which consists of the variables and their values that were in scope at the time the closure was created. In other words, a closure allows a function to access variables from an outer function or the global scope even after the outer function has finished executing.
+
+In JavaScript, closures are created whenever a nested function references variables from its outer scope. The inner function maintains a reference to its outer scope, preserving access to the variables and parameters of the outer function, even when the outer function has returned.
+
+Closures are commonly used to create private variables and encapsulation in JavaScript. They allow you to define functions that have access to private variables, which cannot be accessed or modified from outside the function.
+
+
+function outerFunction() {
+  var outerVariable = 'Hello';
+
+  function innerFunction() {
+    console.log(outerVariable);
+  }
+
+  return innerFunction;
+}
+
+var closureFunction = outerFunction();
+closureFunction(); // Output: Hello
+
