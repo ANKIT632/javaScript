@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Closures</h2>
+
+
+<script>
+function outerFunction() {
+  var outerVariable = 1;
+
+  function innerFunction() {
+    document.write(outerVariable++);
+  }
+
+  return innerFunction;
+}
+
+var closureFunction = outerFunction(); // The inner function is returned and assigned to the variable closureFunction
+closureFunction(); // Output: Hello
+closureFunction(); 
+closureFunction(); 
+closureFunction();
+</script>
+
+</body>
+</html>
