@@ -1,28 +1,13 @@
-<!DOCTYPE html>
-<html>
-<body>
+// first call self then pass anonymous function to add and by the help of add we call many time anonymous function .
 
-<h2>JavaScript Closures</h2>
-
-<p>Counting with a local variable.</p>
-
-<button type="button" onclick="myFunction()">Count!</button>
-
-<p id="demo">0</p>
-
-<script>
 const add = (function () {
   let counter = 0;
-  return function () {counter += 1; return counter;}
+  return function () {counter += 1; return counter}
 })();
 
-function myFunction(){
-  document.getElementById("demo").innerHTML = add();
-}
-</script>
-
-</body>
-</html>
+add();
+add();
+add();
 
 // A closure is a function along with its lexical environment, which consists of the variables and their values that were in scope at the time the closure was created. In other words, a closure allows a function to access variables from an outer function or the global scope even after the outer function has finished executing.
 
