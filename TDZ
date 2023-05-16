@@ -1,0 +1,10 @@
+
+  // TDZ starts at beginning of scope
+  const func = () => console.log(letVar); // OK
+
+  // Within the TDZ letVar access throws `ReferenceError`
+
+  let letVar = 3; // End of TDZ (for letVar)
+  func(); // Called outside TDZ!
+
+// for const and let if we access the varible before declration then it is not access due to TDZ.
