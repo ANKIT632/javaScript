@@ -4,7 +4,7 @@
 <h2>JavaScript Map Objects</h2>
 <p>Creating a Map from an Array:</p>
 
-<p id="demo"></p>
+<p id="demo"></p> 
 
 <script>
 // Create a Map
