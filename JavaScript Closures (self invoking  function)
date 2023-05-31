@@ -5,7 +5,7 @@ const add = (function () {
   return function () {counter += 1; return counter}
 })();
 
-add();
+add(); 
 add();
 add();
 
