@@ -10,9 +10,10 @@
 <script>
 const person1 = {
   fullName: function() {
-    return this.firstName + " " + this.lastName;
+    return val+ " " + this.firstName + " " + this.lastName ;
   }
 }
+
 
 const person2 = {
   firstName:"John",
@@ -21,7 +22,8 @@ const person2 = {
 
 let x = person1.fullName;
 
-x=x.call(person2);
+// this refer to person2 means  person2.firstName  , person.lastName
+x=x.call("welcome",person2);
 document.getElementById("demo").innerHTML = x; 
 </script>
 
