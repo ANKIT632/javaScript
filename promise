@@ -1,0 +1,33 @@
+
+
+const datas=[{name:"ankit"},{name:"kumar"}];
+function getdata(){
+setTimeout(()=>{
+    let val="";
+   datas.forEach((data,index)=>{
+       val+=data.name+" " ;
+      
+   } )
+    document.write(val);
+},1000);
+}
+
+function getdatas(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(() => {
+
+       datas.push({name:"gupta"});
+       let error=false;
+       if(!error){
+           resolve();
+       }
+       else{
+           reject("error");
+       }
+      
+},2000);
+    })
+
+}
+
+getdatas().then(getdata).catch(err=> document.write(err));
