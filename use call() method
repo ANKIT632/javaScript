@@ -9,7 +9,7 @@
 
 <script>
 const person1 = {
-  fullName: function() {
+  fullName: function(val) {
     return val+ " " + this.firstName + " " + this.lastName ;
   }
 }
