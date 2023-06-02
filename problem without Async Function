@@ -33,7 +33,32 @@ let v="";
 
 // note:
 //As for the v variable that you print outside of any function, it is initialized and assigned the value of "ankit kumar" before any asynchronous operations occur. 
-Therefore, it will only contain the initial values of the datas array ("ankit" and "kumar") and will not reflect any updates made later.
+// Therefore, it will only contain the initial values of the datas array ("ankit" and "kumar") and will not reflect any updates made later.
 //Since the delay for executing the getdata functions (1 second) is shorter than the delay for executing the getdatas function (2 seconds),
-all the getdata functions are scheduled to execute before the getdatas function.
+// all the getdata functions are scheduled to execute before the getdatas function.
 
+//solve problem using asyn callback function
+
+
+const datas=[{name:"ankit"},{name:"kumar"}];
+function getdata(){
+setTimeout(()=>{
+    let val="";
+   datas.forEach((data,index)=>{
+       val+=data.name+" " ;
+      
+   } )
+    document.write(val);
+},1000);
+}
+
+function getdatas(callback){
+setTimeout(()=>{
+
+       datas.push({name:"gupta"});
+       callback();
+      
+},2000);
+}
+
+getdatas(getdata);
