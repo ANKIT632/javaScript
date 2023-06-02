@@ -24,4 +24,16 @@ getdatas();
 getdata(); // ankit kumar
 getdata();  // ankit kumar
 
+let v="";
+  datas.forEach((data,index)=>{
+       v+=data.name+" " ;
+      
+   })
+   document.write(v);
+
+// note:
+//As for the v variable that you print outside of any function, it is initialized and assigned the value of "ankit kumar" before any asynchronous operations occur. 
+Therefore, it will only contain the initial values of the datas array ("ankit" and "kumar") and will not reflect any updates made later.
+//Since the delay for executing the getdata functions (1 second) is shorter than the delay for executing the getdatas function (2 seconds),
+all the getdata functions are scheduled to execute before the getdatas function.
 
