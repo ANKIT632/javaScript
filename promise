@@ -1,7 +1,7 @@
 
 
 const datas=[{name:"ankit"},{name:"kumar"}];
-function getdata(){
+function getdata(){ 
 setTimeout(()=>{
     let val="";
    datas.forEach((data,index)=>{
