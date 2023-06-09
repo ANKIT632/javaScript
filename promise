@@ -6,7 +6,7 @@ setTimeout(()=>{
     let val="";
    datas.forEach((data,index)=>{
        val+=data.name+" " ;
-      
+         
    } )
     document.write(val);
 },1000);
