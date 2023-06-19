@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body> 
 
 <h1>The JavaScript <i>this</i> Keyword</h1>
 <p>In this example <strong>this</strong> refers to person2, even if it is a method of person1:</p>
