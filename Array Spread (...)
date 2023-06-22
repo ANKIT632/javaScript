@@ -6,7 +6,7 @@
 <h2>The ... Operator</h2>
 
 <p>The "spread" operator spreads elements of iterable objects:</p>
-
+ 
 <p id="demo"></p>
 
 <script>
