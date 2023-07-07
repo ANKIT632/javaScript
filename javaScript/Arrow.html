@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- arrow function refer the global object and traditional function refer the  lexcical object (with in the block and nested block)-->
+  
+    <script>
+   name="ankit";   
+const myObject = {
+  name: 'Alice',
+  traditionalFunction: function() {
+    console.log('Hello, my name is ' + this.name);
+  },
+  arrowFunction: () => {
+    console.log('Hello, my name is ' + this.name);
+  }
+};
+
+myObject.traditionalFunction(); // logs "Hello, my name is Alice"
+myObject.arrowFunction(); // logs "Hello, my name is undefined"
+
+const numbers = [1, 2, 3, 4, 5];
+
+// Using a traditional function
+const d = numbers.map(function(num) {
+  console.log(num);
+});
+
+console.log(d);
+// Using an arrow function
+const t= numbers.map(num => num * 3);
+console.log(t);
+    </script>
+</body>
+</html>

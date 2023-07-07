@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>toggle</title>
+</head>
+
+<body>
+<input type="password" name="" id="password">
+</br>
+<button >submit</button>
+<button  type="button" onclick="toggle(this)">show</button>
+
+</body>
+<script type="text/javascript">
+    var password=document.getElementById("password");
+    function toggle(ele){
+    var type=password.getAttribute('type');
+    if(type==='password'){
+        password.setAttribue('type','text');
+        ele.innerText='hide';
+    }
+    else{
+        password.setAttribute('type','password');
+        ele.innerText='show';
+    }
+
+   } 
+</script>
+</html>

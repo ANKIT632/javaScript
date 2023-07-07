@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jS</title>
+</head>
+<body>
+    <h1>
+        javascript
+    </h1>
+
+    <!-- Id -->
+
+    <div id="main">
+     hello javaScript
+    </div>
+
+    <div id="name">
+
+       Name : ankit
+    </div>
+
+    <!-- class -->
+
+    <div class="hel">
+        look1
+    </div>
+
+    <div class="hel">
+        look2
+    </div>
+</body>
+
+ <!-- internal javascript -->
+<script type="text/javascript">
+    // alert("wrong input");
+   // confirm("confirm login");
+  console.log("login page");
+   // any thing write on there html page 
+    document.write("<h1>hello welcome webpage </h1>"); 
+    var c=17;
+   // prompt("name enter");
+
+</script>
+
+
+<!-- javaScript DOM function -->
+<script type="text/javascript">
+var x= document.getElementById("main").innerHTML;
+console.log(x);
+document.write("----------------");
+document.write(x);
+document.write("----------------");
+
+var m=document.getElementById("name").innerHTML;
+document.write(m);
+//alert(m);
+
+
+var k=document.getElementsByClassName("hel")[1].innerHTML;
+document.write(k)
+
+// change  names
+var k=document.getElementsByClassName("hel")[0].innerHTML="hello look1";
+document.write(k)
+</script>
+</html>

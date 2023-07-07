@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title> 
+            open,close new tab.
+        </title>
+    </head>
+
+    <body>
+        <button onclick="openWin()">Open leetCode</button>
+        <button onclick="closeWin()">Open leetCode</button>
+
+    </body>
+
+    <script type="text/javascript">
+        var win;
+
+        function openWin(){
+            win=window.open("https://www.leetcode.com","width=500px","height=500px");
+            // win store all property of open ,and it is object of window.
+            // document.write(typeof(win));
+        }
+
+        function closeWin(){
+            win.close();
+        }
+    </script>
+</html>

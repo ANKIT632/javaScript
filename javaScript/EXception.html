@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exception</title>
+</head>
+<body>
+    <!-- <button onclick="test()">click</button> -->
+    <h4> Enter the number between 5 and 10</h4>
+    <input type=" " name="" id="num"> </br>
+    <button onclick="test1()">test1</button>
+    <h1 id="res"></h1>
+</body>
+<script type="text/javascript">
+
+//-------------------------------------------------------------------------------------------------------------
+    function test(){
+        try{
+            alert("hello"); //error handle
+        }
+        catch(error){
+        document.getElementById('res').innerHTML=error;
+        }
+
+    }
+
+ //----------------------------------------------------------------------------------------------------------------
+ var num=document.getElementById('num');
+ function test1(){
+       var data =num.value; //give in string data type value. 
+
+        // document.write(typeof(data));  
+        try{
+            if(isNaN(data)){ // isNaN first convert into string then check 
+             throw " this is not Number"
+            }
+
+            else{
+                if(data<5 || data>10){
+                    throw "Number is out of range";
+                }
+            }
+
+        
+        }
+        catch(error){
+        document.getElementById('res').innerHTML=error;
+        }
+
+        finally{
+            num.value="";
+        }
+
+    }
+    
+
+
+</script>
+</html>

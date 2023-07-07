@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <Title>this</Title>
+    </head>
+
+    <script type="text/javascript">
+        var person={
+            firstName: "ankit", 
+            secondName :"Gupta",
+            fullName: function () {
+                return this.firstName+this.secondName; //this refer karta hai jis object k under use ker rhe hai ,there this refer person object. 
+            }
+        };
+
+        document.write("<h1>"+person.fullName());
+
+       function remove(ele){
+        alert(this);
+       }     
+    </script>    
+    <body>
+<br/>
+<!-- when click buttom here create Dom object -->
+<button onclick="this.style.background='red'"> click here</button>  
+<br/>
+<button onclick="this.style.display='none'"> click here for hide</button>  
+<button onclick="remove()"> show</button>
+
+    </body>
+</html>

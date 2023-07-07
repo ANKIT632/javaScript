@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>
+            AddListner
+        </title>
+    </head>
+    <body>
+        <div id="cout">
+
+        </div>
+        <button id="btn">Click Me</button>
+        <button id="stop" onclick="stop()">STOP</button>
+    <script type="text/javascript">
+           var i=0;
+        //    document.getElementById("btn").addEventListener("click",function(){ 
+        //     document.getElementById('cout').innerHTML=i; 
+        //     i++;
+        //    })
+
+        document.getElementById("btn").addEventListener("click",conuter);
+        function conuter(){
+   
+             document.getElementById('cout').innerHTML=i; 
+             i++;
+           
+        }
+
+           document.getElementById("btn").addEventListener("mouseenter",function(){ 
+            document.getElementById('cout').style.color="black"; 
+        
+           })
+
+
+           
+           document.getElementById("btn").addEventListener("mouseleave",function(){ 
+            document.getElementById('cout').style.color="red"; 
+        
+           })
+
+        function stop(){
+           document.getElementById("btn").removeEventListener("click",conuter)
+        }
+
+    </script>
+</html>

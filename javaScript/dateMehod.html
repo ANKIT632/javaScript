@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date method</title>
+</head>
+<body>
+    
+    <h1 id="res">
+
+    </h1>
+    <button onclick="getDate()">Date</button>
+    <button onclick="getyear()">year</button>
+    <button onclick="getmonth()">month</button>
+</body>
+
+<script type="text/javascript"> 
+     const date=new Date();
+
+    function getDate(){
+        document.getElementById('res').innerText=date;
+
+    }
+
+    function getyear(){
+        document.getElementById('res').innerText=date.getFullYear();
+    }
+
+    function getmonth(){
+
+        var month=["jan",'feb','mar']
+        document.getElementById('res').innerText=month[date.getMonth()];
+    }
+
+    // simmilarly all other function.
+</script>
+</html>

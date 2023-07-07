@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>calculator</title>
+</head>
+<body>
+    <input type="number" name="first" id="first" step="any"/>
+    <select  id="ope">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option> 
+    </select>
+    
+    <input type="number" name="second"  id="second" step="any"/>
+
+    <br/>
+    <br/>
+    <button onclick="cal()">Calulate</button>
+
+    <input type="text" name="" id="res" readonly="" />
+     
+    <h1 id="aa"></h1>
+</body>
+<script type="text/javascript">
+   function cal(){
+    var a=document.getElementById("first").value;
+    var b=document.getElementById("second").value;
+    var op=document.getElementById("ope").value;
+   
+    // print method 
+    document.getElementById("aa").innerHTML=typeof(a);
+    //OR
+//     document.write(typeof(a));
+
+    if(op=='+'){
+        var res=parseInt(a)+parseInt(b);  // here using parseInt because a is String type
+    }
+    if(op=='*'){
+        var res=parseInt(a)*parseInt(b);
+    }
+    if(op=='-'){
+        var res=parseInt(a)-parseInt(b);
+    }
+    if(op=='/'){
+        var res=parseInt(a)/parseInt(b);
+    }
+    document.getElementById("res").value=res;
+
+   }
+</script>
+</html>
