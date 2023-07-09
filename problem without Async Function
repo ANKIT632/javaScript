@@ -1,6 +1,6 @@
 
 
-const datas=[{name:"ankit"},{name:"kumar"}];
+const datas=[{name:"ankit"},{sname:"kumar"}];
 function getdata(){
 setTimeout(()=>{
     let val="";
