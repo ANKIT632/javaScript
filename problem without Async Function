@@ -1,5 +1,4 @@
 
-
 const datas=[{name:"ankit"},{name:"kumar"}];
 function getdata(){
 setTimeout(()=>{
