@@ -4,7 +4,6 @@
 
 <h2>JavaScript Closures</h2>
 
-
 <script>
 function outerFunction() {
   var outerVariable = 1;
