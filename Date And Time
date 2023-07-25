@@ -5,5 +5,5 @@ function myFunction() {
   document.getElementById("demo").innerHTML=
   d.getHours() + ":" +
   d.getMinutes() + ":" + 
-  d.getSeconds();
+  d.getSeconds(); 
 }
