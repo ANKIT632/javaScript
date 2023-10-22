@@ -1,4 +1,4 @@
-
+ 
   // TDZ starts at beginning of scope
   const func = () => console.log(letVar); // OK
 
